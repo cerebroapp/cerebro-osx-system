@@ -1,6 +1,6 @@
 {
   "name": "cerebro-osx-system",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Cerebro plugin to automate some OSx system features",
   "license": "MIT",
   "repository": "KELiON/cerebro-osx-system",
