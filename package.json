@@ -1,9 +1,9 @@
 {
-  "name": "",
+  "name": "cerebro-osx-system",
   "version": "0.0.1",
-  "description": "",
+  "description": "Cerebro plugin to automate some OSx system features",
   "license": "MIT",
-  "repository": "KELiON/cerebro-plugin",
+  "repository": "KELiON/cerebro-osx-system",
   "author": {
     "name": "Alexandr Subbotin",
     "email": "kelionweb@gmail.com",

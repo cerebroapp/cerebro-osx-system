@@ -1,6 +1,6 @@
 # cerebro-osx-system
 
-> [Cerebro](https://cerebroapp.com) plugin to simplify access to some OSx system features
+> [Cerebro](https://cerebroapp.com) plugin to automate some OSx system features
 
 ## Usage
 
