@@ -1,10 +1,8 @@
 /* eslint max-len: [0] */
 
 const { search, shellCommand } = require('cerebro-tools')
-const airdropCommand = require('raw-loader!./run-airdrop')
 
 // Load icons
-const airdropIcon = require('./airdrop.png')
 const icloudDriveIcon = require('./icloud_drive.png')
 
 const COMMANDS = {
@@ -25,11 +23,6 @@ const COMMANDS = {
   },
   'Screen Saver': {
     command: 'open -a ScreenSaverEngine',
-  },
-  Airdrop: {
-    command: `osascript -e '${airdropCommand}'`,
-    icon: airdropIcon,
-    subtitle: 'Open Airdrop in Finder'
   },
   'iCloud Drive': {
     command: `open /Users/${process.env.USER}/Library/Mobile\\ Documents/com\~apple\~CloudDocs`,

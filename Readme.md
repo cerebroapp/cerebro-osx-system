@@ -12,7 +12,6 @@ In Cerebro, type command that you need and `enter` to execute it. List of availa
 * `Lock`;
 * `Shut Down`;
 * `Screen Saver`;
-* `Airdrop` – open airdrop in Finder;
 * `iCloud Drive` – open iCloud drive in Finder;
 * `Trash` – open trash in Finder.
 
