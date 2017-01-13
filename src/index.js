@@ -33,6 +33,10 @@ const COMMANDS = {
     command: `open /Users/${process.env.USER}/.Trash`,
     icon: '/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/TrashIcon.icns',
     subtitle: 'Show trash'
+  },
+  'Empty Trash': {
+    command: `osascript -e 'tell app "Finder" to if (count of items in trash) > 0 then empty trash'`,
+    icon: '/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/TrashIcon.icns',
   }
 }
 

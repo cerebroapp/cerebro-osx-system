@@ -6,14 +6,15 @@
 
 In Cerebro, type command that you need and `enter` to execute it. List of available system commands:
 
-* `Restart`;
-* `Logout`;
-* `Sleep`;
-* `Lock`;
-* `Shut Down`;
-* `Screen Saver`;
-* `iCloud Drive` – open iCloud drive in Finder;
-* `Trash` – open trash in Finder.
+* `Restart`
+* `Logout`
+* `Sleep`
+* `Lock`
+* `Shut Down`
+* `Screen Saver`
+* `iCloud Drive` – open iCloud drive in Finder
+* `Empty Trash`
+* `Trash` – open trash in Finder
 
 ## Related
 
