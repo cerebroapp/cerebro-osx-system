@@ -2,9 +2,6 @@
 
 const { search, shellCommand } = require('cerebro-tools')
 
-// Load icons
-const icloudDriveIcon = require('./icloud_drive.png')
-
 const COMMANDS = {
   Restart: {
     command: "osascript -e 'tell app \"loginwindow\" to «event aevtrrst»'",
@@ -23,11 +20,6 @@ const COMMANDS = {
   },
   'Screen Saver': {
     command: 'open -a ScreenSaverEngine',
-  },
-  'iCloud Drive': {
-    command: `open /Users/${process.env.USER}/Library/Mobile\\ Documents/com\~apple\~CloudDocs`,
-    icon: icloudDriveIcon,
-    subtitle: 'Open iCloud Drive in Finder'
   },
   Trash: {
     command: `open /Users/${process.env.USER}/.Trash`,
