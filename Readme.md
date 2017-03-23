@@ -1,5 +1,7 @@
 # cerebro-osx-system
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/KELiON/cerebro-osx-system.svg)](https://greenkeeper.io/)
+
 > [Cerebro](https://cerebroapp.com) plugin to automate some OSx system features
 
 ## Usage
