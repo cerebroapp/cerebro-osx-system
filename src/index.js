@@ -1,25 +1,37 @@
 /* eslint max-len: [0] */
 
-const { search, shellCommand } = require('cerebro-tools')
+import { search, shellCommand } from 'cerebro-tools';
+import powerIcn from './assets/power.png';
+import refreshIcn from './assets/refresh.png';
+import signoutIcn from './assets/sign-out.png';
+import bedIcn from './assets/bed.png';
+import lockIcn from './assets/lock.png';
+import screensaverIcn from './assets/picture-o.png';
 
 const COMMANDS = {
   Restart: {
     command: "osascript -e 'tell app \"loginwindow\" to «event aevtrrst»'",
+    icon: refreshIcn
   },
   Logout: {
     command: "osascript -e 'tell app \"System Events\" to log out'",
+    icon: signoutIcn
   },
   Sleep: {
     command: 'pmset sleepnow',
+    icon: bedIcn
   },
   Lock: {
     command: '/System/Library/CoreServices/Menu\\ Extras/User.menu/Contents/Resources/CGSession -suspend',
+    icon: lockIcn
   },
   'Shut Down': {
     command: "osascript -e 'tell app \"loginwindow\" to «event aevtrsdn»'",
+    icon: powerIcn
   },
   'Screen Saver': {
     command: 'open -a ScreenSaverEngine',
+    icon: screensaverIcn
   },
   Trash: {
     command: `open /Users/${process.env.USER}/.Trash`,
@@ -38,7 +50,7 @@ const COMMANDS = {
  * @param  {String} options.term
  * @param  {Function} options.display
  */
-const fn = ({ term, display }) => {
+export const fn = ({ term, display }) => {
   const commands = search(Object.keys(COMMANDS), term)
   if (commands.length > 0) {
     const result = commands.map((cmd) => ({
@@ -51,5 +63,3 @@ const fn = ({ term, display }) => {
     display(result)
   }
 }
-
-module.exports = { fn }
