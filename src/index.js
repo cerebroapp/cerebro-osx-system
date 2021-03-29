@@ -22,7 +22,7 @@ const COMMANDS = {
     icon: bedIcn
   },
   Lock: {
-    command: '/System/Library/CoreServices/Menu\\ Extras/User.menu/Contents/Resources/CGSession -suspend',
+    command: "osascript -e 'tell application \"System Events\" to keystroke \"q\" using {command down,control down}'",
     icon: lockIcn
   },
   'Shut Down': {
